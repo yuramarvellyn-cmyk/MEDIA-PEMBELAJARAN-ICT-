@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi Pembelajaran - Physics Adventure</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;600;900&family=Poppins:wght@600;700;900&display=swap" rel="stylesheet">
+    <style>
+        * { font-family: 'Poppins', sans-serif; }
+        body { background: url('https://raw.githubusercontent.com/lorrainemydth-gif/MEDIA_PEMBELAJARAN/3b9f4f62282a6d3295520df7ccbd2c964d8ce135/LKPD%20SISWA%20MEDIA%20PEMBELAJARAN%20ICT%20%282%29.png') center/cover no-repeat, url('assets/lkpd-v3.png') center/cover no-repeat; background-color: #ffffff; }
+        body::before { content: ""; position: fixed; inset: 0; background: rgba(255,255,255,0.15); pointer-events: none; }
+        .card { background: white; border: 3px solid #000; border-radius: 1rem; box-shadow: 8px 8px 0px rgba(0,0,0,0.2); }
+        .button { background: #22c55e; color: white; border: 2px solid #000; padding: 1rem 2rem; border-radius: 0.75rem; font-weight: bold; cursor: pointer; transition: all 0.2s; text-decoration: none; display: inline-block; }
+        .button:hover { transform: translate(-2px, -2px); box-shadow: 4px 4px 0px rgba(0,0,0,0.2); }
+        .button.secondary { background: #3b82f6; }
+        .button.warning { background: #f59e0b; }
+        .title { font-family: 'Poppins', sans-serif; -webkit-text-stroke: 2px black; text-shadow: 3px 3px 0px rgba(0,0,0,0.3); }
+    </style>
+</head>
+<body>
+    <div class="min-h-screen p-4 md:p-8">
+        <div class="max-w-4xl mx-auto">
+            <!-- Header -->
+            <div class="text-center mb-8">
+                <h1 class="title text-5xl md:text-6xl font-black text-white mb-4">
+                    📚 MATERI PEMBELAJARAN
+                </h1>
+                <p class="text-xl font-bold text-gray-800 drop-shadow-lg">
+                    Konsep Fisika: Momentum & Impuls
+                </p>
+            </div>
+
+            <!-- Back Button -->
+            <div class="mb-6">
+                <a href="index.html" class="button secondary">← Kembali ke Home</a>
+            </div>
+
+            <!-- Materi Content -->
+            <div class="space-y-6">
+                <!-- Pengantar -->
+                <div class="card p-8">
+                    <h2 class="text-3xl font-black mb-4">🎯 Pengantar</h2>
+                    <p class="text-lg mb-4">
+                        Momentum dan impuls adalah besaran dalam fisika yang muncul akibat benda bergerak dan berinteraksi (bertumbukan) dengan benda lain. Besaran-besaran tersebut akan memengaruhi sifat dan karakteristik suatu benda. Dengan memahami konsep momentum dan impuls, kita dapat menjelaskan berbagai peristiwa dalam kehidupan sehari-hari serta menerapkannya untuk mendukung perkembangan ilmu pengetahuan dan teknologi.
+                    </p>
+                </div>
+
+                <!-- Definisi Momentum -->
+                <div class="card p-8">
+                    <h2 class="text-3xl font-black mb-4">⚡ Apa itu Momentum?</h2>
+                    <p class="text-lg mb-4">
+                        <strong>Momentum</strong> adalah besaran fisika yang menunjukkan seberapa sulit suatu benda yang bergerak untuk dihentikan. Momentum dihitung sebagai hasil kali massa benda dengan kecepatannya.
+                    </p>
+                    
+                    <div class="bg-blue-50 p-4 rounded-lg border-2 border-blue-300 mb-4">
+                        <p class="font-mono text-lg text-center">
+                            <strong>p = m × v</strong>
+                        </p>
+                        <p class="text-sm text-gray-600 text-center mt-2">
+                            p = momentum, m = massa, v = kecepatan
+                        </p>
+                    </div>
+                    <p class="text-gray-700">
+                        Momentum adalah besaran vektor, artinya memiliki arah. Jika dua benda bergerak berlawanan arah, momentumnya bisa saling meniadakan.
+                    </p>
+                    <div class="mt-4">
+                        <button id="openVideoBtn2" class="button warning">▶ Tonton penjelasan singkat</button>
+                    </div>
+                </div>
+
+                <!-- Definisi Impuls -->
+                <div class="card p-8">
+                    <h2 class="text-3xl font-black mb-4">💥 Apa itu Impuls?</h2>
+                    <p class="text-lg mb-4">
+                        <strong>Impuls</strong> adalah perubahan momentum suatu benda. Impuls terjadi ketika gaya bekerja pada benda dalam waktu tertentu.
+                    </p>
+                    <div class="bg-green-50 p-4 rounded-lg border-2 border-green-300 mb-4">
+                        <p class="font-mono text-lg text-center">
+                            <strong>Δp = F × Δt</strong>
+                        </p>
+                        <p class="text-sm text-gray-600 text-center mt-2">
+                            Δp = perubahan momentum, F = gaya rata-rata, Δt = selang waktu
+                        </p>
+                    </div>
+                    <p class="text-gray-700">
+                        Impuls menjelaskan mengapa benda bisa berubah kecepatannya ketika mendapat dorongan atau tumbukan.
+                    </p>
+                    <div class="mt-4">
+                        <button id="openVideoBtn3" class="button warning">▶ Tonton penjelasan singkat (Impuls)</button>
+                    </div>
+                </div>
+
+                <!-- Hubungan Momentum dan Impuls -->
+                <div class="card p-8">
+                    <h2 class="text-3xl font-black mb-4">🔗 Hubungan Momentum dan Impuls</h2>
+                    <p class="text-lg mb-4">
+                        Dari definisi di atas, kita bisa melihat bahwa impuls sama dengan perubahan momentum:
+                    </p>
+                    <div class="bg-yellow-50 p-4 rounded-lg border-2 border-yellow-300 mb-4">
+                        <p class="font-mono text-lg text-center">
+                            <strong>Impuls = Δp = m × Δv</strong>
+                        </p>
+                    </div>
+                    <p class="text-gray-700">
+                        Ini berarti ketika suatu gaya bekerja pada benda, momentum benda akan berubah sebesar impuls yang diberikan.
+                    </p>
+                    <div class="mt-4">
+                        <button id="openVideoBtn4" class="button warning">▶ Tonton penjelasan singkat (Hubungan)</button>
+                    </div>
+                </div>
+
+                <!-- Hukum Kekekalan Momentum -->
+                <div class="card p-8">
+                    <h2 class="text-3xl font-black mb-4">⚖️ Hukum Kekekalan Momentum</h2>
+                    <p class="text-lg mb-4">
+                        Dalam sistem tertutup (tidak ada gaya luar), total momentum sebelum dan sesudah interaksi tetap sama.
+                    </p>
+                    <div class="bg-purple-50 p-4 rounded-lg border-2 border-purple-300 mb-4">
+                        <p class="font-mono text-lg text-center">
+                            <strong>p₁ + p₂ = p₁' + p₂'</strong>
+                        </p>
+                        <p class="text-sm text-gray-600 text-center mt-2">
+                            Momentum total sebelum = Momentum total sesudah
+                        </p>
+                    </div>
+                    <p class="text-gray-700">
+                        Hukum ini sangat penting dalam memahami tumbukan antar benda, seperti dalam game Physics Adventure.
+                    </p>
+                    <div class="mt-4">
+                        <button id="openVideoBtn6" class="button warning">▶ Tonton penjelasan singkat (Hukum Kekekalan)</button>
+                    </div>
+                </div>
+
+                <!-- Jenis Tumbukan -->
+                <div class="card p-8">
+                    <h2 class="text-3xl font-black mb-4">💥 Jenis-jenis Tumbukan</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div class="bg-red-50 p-4 rounded border-2 border-red-300">
+                            <h3 class="font-bold text-lg mb-2">Tumbukan Lenting Sempurna</h3>
+                            <p class="text-sm">Energi kinetik dan momentum terjaga. Benda memantul sempurna.</p>
+                        </div>
+                        <div class="bg-yellow-50 p-4 rounded border-2 border-yellow-400">
+                            <h3 class="font-bold text-lg mb-2">Tumbukan Lenting Sebagian</h3>
+                            <p class="text-sm">Energi kinetik sebagian hilang. Benda memantul tapi tidak sempurna.</p>
+                        </div>
+                        <div class="bg-orange-50 p-4 rounded border-2 border-orange-300">
+                            <h3 class="font-bold text-lg mb-2">Tumbukan Tak Lenting Sama Sekali</h3>
+                            <p class="text-sm">Momentum terjaga, energi kinetik berkurang banyak. Benda menempel atau bergerak bersama.</p>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <button id="openVideoBtn5" class="button warning">▶ Tonton penjelasan singkat (Jenis Tumbukan)</button>
+                    </div>
+                </div>
+
+                <!-- Aplikasi dalam Kehidupan -->
+                <div class="card p-8">
+                    <h2 class="text-3xl font-black mb-4">🌍 Aplikasi dalam Kehidupan Sehari-hari</h2>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li><strong>Olahraga:</strong> Tendangan bola, pukulan tennis, atau lemparan baseball</li>
+                        <li><strong>Kendaraan:</strong> Tabrakan mobil, pengereman darurat</li>
+                        <li><strong>Keselamatan:</strong> Airbag mobil mengurangi impuls dengan memperpanjang waktu benturan</li>
+                        <li><strong>Roket:</strong> Dorongan ke belakang untuk mendorong roket ke depan</li>
+                    </ul>
+                </div>
+
+                <!-- Materi PDF -->
+                <div class="card p-8">
+                    <h2 class="text-3xl font-black mb-4">📄 Materi Lengkap (PDF)</h2>
+                    <p class="text-lg mb-4">
+                        Untuk pembelajaran yang lebih mendalam, unduh atau baca materi lengkap tentang Momentum & Impuls dalam format PDF.
+                    </p>
+                    <div class="mb-4">
+                        <a href="materi-fisika.pdf" class="button secondary" target="_blank">📥 Download PDF</a>
+                    </div>
+                    <div class="border-2 border-gray-300 rounded-lg overflow-hidden">
+                        <embed src="materi-fisika.pdf" type="application/pdf" width="100%" height="600px" />
+                    </div>
+                    <p class="text-sm text-gray-600 mt-2">
+                        Jika PDF tidak muncul, pastikan browser Anda mendukung tampilan PDF atau klik tombol download di atas.
+                    </p>
+                </div>
+
+                <!-- Video YouTube -->
+                <div class="card p-8">
+                    <h2 class="text-3xl font-black mb-4">🎥 Video Pembelajaran</h2>
+                    <p class="text-lg mb-4">
+                        Tonton video berikut untuk penjelasan visual tentang Momentum & Impuls.
+                    </p>
+                    <div class="aspect-video">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <p class="text-sm text-gray-600 mt-2">
+                        Ganti VIDEO_ID di src iframe dengan ID video YouTube yang diinginkan.
+                    </p>
+
+                </div>
+
+                </div>
+
+                <!-- Call to Action -->
+                <div class="card p-8 bg-green-50 border-4 border-green-600 text-center">
+                    <h2 class="text-3xl font-black mb-4 text-green-700">🎮 Siap Berlatih?</h2>
+                    <p class="text-lg mb-6 text-gray-700">Sekarang saatnya menerapkan konsep ini dalam game! Mainkan Physics Adventure untuk pengalaman belajar yang menyenangkan.</p>
+                    <a href="liyaa.html" class="button w-full md:w-auto py-4 px-8 text-xl">MULAI BERMAIN</a>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <!-- In-page video modal for Jenis Tumbukan link -->
+            <!-- In-page video modal for Hukum Kekekalan Momentum link -->
+            <div id="videoModal6" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-60 hidden z-50">
+                <div class="bg-white rounded-lg overflow-hidden max-w-3xl w-full mx-4">
+                    <div class="p-4 flex justify-between items-center border-b">
+                        <h3 class="font-bold">Video: Hukum Kekekalan Momentum</h3>
+                        <button id="closeVideoBtn6" class="button">Tutup</button>
+                    </div>
+                    <div class="aspect-video">
+                        <iframe id="videoIframe6" width="100%" height="100%" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div id="videoModal5" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-60 hidden z-50">
+                <div class="bg-white rounded-lg overflow-hidden max-w-3xl w-full mx-4">
+                    <div class="p-4 flex justify-between items-center border-b">
+                        <h3 class="font-bold">Video: Jenis-jenis Tumbukan</h3>
+                        <button id="closeVideoBtn5" class="button">Tutup</button>
+                    </div>
+                    <div class="aspect-video">
+                        <iframe id="videoIframe5" width="100%" height="100%" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- In-page video modal for Hubungan link -->
+            <div id="videoModal4" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-60 hidden z-50">
+                <div class="bg-white rounded-lg overflow-hidden max-w-3xl w-full mx-4">
+                    <div class="p-4 flex justify-between items-center border-b">
+                        <h3 class="font-bold">Video: Hubungan Momentum dan Impuls</h3>
+                        <button id="closeVideoBtn4" class="button">Tutup</button>
+                    </div>
+                    <div class="aspect-video">
+                        <iframe id="videoIframe4" width="100%" height="100%" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- In-page video modal for Momentum link -->
+            <div id="videoModal2" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-60 hidden z-50">
+                <div class="bg-white rounded-lg overflow-hidden max-w-3xl w-full mx-4">
+                    <div class="p-4 flex justify-between items-center border-b">
+                        <h3 class="font-bold">Video: Penjelasan Momentum</h3>
+                        <button id="closeVideoBtn2" class="button">Tutup</button>
+                    </div>
+                    <div class="aspect-video">
+                        <iframe id="videoIframe2" width="100%" height="100%" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- In-page video modal for Impuls link -->
+            <div id="videoModal3" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-60 hidden z-50">
+                <div class="bg-white rounded-lg overflow-hidden max-w-3xl w-full mx-4">
+                    <div class="p-4 flex justify-between items-center border-b">
+                        <h3 class="font-bold">Video: Penjelasan Impuls</h3>
+                        <button id="closeVideoBtn3" class="button">Tutup</button>
+                    </div>
+                    <div class="aspect-video">
+                        <iframe id="videoIframe3" width="100%" height="100%" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12 text-white">
+                <p class="text-lg font-bold">Physics Adventure © 2025</p>
+                <p class="text-sm opacity-80">Educational Game for Physics Learning</p>
+            </div>
+
+            <script>
+                (function(){
+                    const openBtn = document.getElementById('openVideoBtn2');
+                    const modal = document.getElementById('videoModal2');
+                    const closeBtn = document.getElementById('closeVideoBtn2');
+                    const iframe = document.getElementById('videoIframe2');
+                    const embedSrc = 'https://www.youtube.com/embed/SE9GbAs3_vk?si=a8B_emCGx8OEJMMU&autoplay=1';
+                    function open(){ iframe.src = embedSrc; modal.classList.remove('hidden'); }
+                    function close(){ modal.classList.add('hidden'); iframe.src = ''; }
+                    openBtn && openBtn.addEventListener('click', open);
+                    closeBtn && closeBtn.addEventListener('click', close);
+                    modal && modal.addEventListener('click', (e)=>{ if(e.target===modal) close(); });
+                })();
+            </script>
+
+            <script>
+                (function(){
+                    const openBtn3 = document.getElementById('openVideoBtn3');
+                    const modal3 = document.getElementById('videoModal3');
+                    const closeBtn3 = document.getElementById('closeVideoBtn3');
+                    const iframe3 = document.getElementById('videoIframe3');
+                    const embedSrc3 = 'https://www.youtube.com/embed/AlHlZR8kbV8?si=l32Wm42qriYtLaLp&autoplay=1';
+                    function open3(){ iframe3.src = embedSrc3; modal3.classList.remove('hidden'); }
+                    function close3(){ modal3.classList.add('hidden'); iframe3.src = ''; }
+                    openBtn3 && openBtn3.addEventListener('click', open3);
+                    closeBtn3 && closeBtn3.addEventListener('click', close3);
+                    modal3 && modal3.addEventListener('click', (e)=>{ if(e.target===modal3) close3(); });
+                })();
+            </script>
+
+            <script>
+                (function(){
+                    const openBtn4 = document.getElementById('openVideoBtn4');
+                    const modal4 = document.getElementById('videoModal4');
+                    const closeBtn4 = document.getElementById('closeVideoBtn4');
+                    const iframe4 = document.getElementById('videoIframe4');
+                    const embedSrc4 = 'https://www.youtube.com/embed/lbhF55PZHkA?si=uZfV7q0io-T7V2Vx&autoplay=1';
+                    function open4(){ iframe4.src = embedSrc4; modal4.classList.remove('hidden'); }
+                    function close4(){ modal4.classList.add('hidden'); iframe4.src = ''; }
+                    openBtn4 && openBtn4.addEventListener('click', open4);
+                    closeBtn4 && closeBtn4.addEventListener('click', close4);
+                    modal4 && modal4.addEventListener('click', (e)=>{ if(e.target===modal4) close4(); });
+                })();
+            </script>
+
+            <script>
+                (function(){
+                    const openBtn5 = document.getElementById('openVideoBtn5');
+                    const modal5 = document.getElementById('videoModal5');
+                    const closeBtn5 = document.getElementById('closeVideoBtn5');
+                    const iframe5 = document.getElementById('videoIframe5');
+                    const embedSrc5 = 'https://www.youtube.com/embed/TA4qC3p36NU?si=cc98F1OM_PGkOpem&autoplay=1';
+                    function open5(){ iframe5.src = embedSrc5; modal5.classList.remove('hidden'); }
+                    function close5(){ modal5.classList.add('hidden'); iframe5.src = ''; }
+                    openBtn5 && openBtn5.addEventListener('click', open5);
+                    closeBtn5 && closeBtn5.addEventListener('click', close5);
+                    modal5 && modal5.addEventListener('click', (e)=>{ if(e.target===modal5) close5(); });
+                })();
+            </script>
+            
+        </div>
+    </div>
+</body>
+</html>
